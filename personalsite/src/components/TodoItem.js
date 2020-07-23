@@ -28,7 +28,9 @@ const TodoItem = props => {
 
 // PropTypes
 TodoItem.propTypes = {
-    todo: PropTypes.object.isRequired
+    todo: PropTypes.object.isRequired,
+    markComplete: PropTypes.func.isRequired,
+    deleteTodo: PropTypes.func.isRequired
 };
 
 // Style

@@ -1,4 +1,5 @@
 import React, { Component, useState } from 'react'
+import PropTypes from 'prop-types';
 
 const AddTodo = props => {
 
@@ -33,5 +34,10 @@ const AddTodo = props => {
         </form>
     );
 }
+
+// PropTypes
+AddTodo.propTypes = {
+    addTodo: PropTypes.func.isRequired,
+};
 
 export default AddTodo
