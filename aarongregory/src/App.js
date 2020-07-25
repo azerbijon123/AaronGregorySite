@@ -9,15 +9,15 @@ const App = (props) => {
     [
       {
           id: 1,  
-          term: 'GitHub',
+          term: 'gitHub',
       },
       {
           id: 2, 
-          term: 'Facebook',
+          term: 'facebook',
       },
       {
           id: 3, 
-          term: 'Google',
+          term: 'google',
       },
     ]
   );

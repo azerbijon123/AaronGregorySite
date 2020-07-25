@@ -10,10 +10,18 @@ const HomeSearch = (props) => {
     });
 
     const searchTermFromList = (e) => {
-        for (var searchItem in props.searchItems)
-        {
-            console.log(searchItem);
-        }
+        // for (var searchItem in props.searchItems)
+        // {
+        //     console.log(searchItem);
+        // }
+        props.searchItems.forEach(item => {
+                    // if(item.term.startsWith(e.target.value.toLowerCase())){
+                    //     console.log(item);
+                    // }
+                    console.log(item.term.startsWith(e.target.value.toLowerCase()));
+                    //console.log(e.target.value.toLowerCase());
+                }
+            );
     };
 
     return(
