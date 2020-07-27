@@ -4,8 +4,7 @@ import './style/common/common.css'
 const HomeSearch = (props) => {
 
     const[homeSearchBox, setHomeSearchBox] = useState(React.createRef());
-    const[autoComplete, setAutoComplete] = useState(React.createRef());
-    const[autoCompleteValue, setAutoCompleteValue] = useState("");
+    const[autoCompleteValue, setAutoCompleteValue] = useState({});
 
     useEffect(() => {
         homeSearchBox.current.focus();
@@ -14,7 +13,7 @@ const HomeSearch = (props) => {
     const searchTermFromList = (e) => {
         if (e.target.value === ""){
             setAutoCompleteValue("");
-            autoComplete.current.value = "";
+            //autoComplete.current.value = "";
             return;
         }
 
@@ -23,9 +22,7 @@ const HomeSearch = (props) => {
         
         props.searchItems.forEach(item => {
                     if (item.term.startsWith(e.target.value.toLowerCase())) {
-                        console.log(item.term);
-                        setAutoCompleteValue(item.term);
-                        autoComplete.current.value = item.term;
+                        setAutoCompleteValue(item);
                     }
                 });
     
@@ -34,7 +31,7 @@ const HomeSearch = (props) => {
 
     const onInputKeyPress = (e) => {
         if (e.key === "Enter") {
-            
+            window.open(autoCompleteValue.address, "_blank");
         }
     };
 
@@ -50,7 +47,9 @@ const HomeSearch = (props) => {
                 placeholder="Welcome..." 
             />
 
-            <input ref={ autoComplete }></input>
+            <div style={ autoCompleteText }>
+                 { autoCompleteValue.term }
+            </div>
         </div>
     );
 }
@@ -62,6 +61,10 @@ const homeSearchStyle = {
     border: 'none',
     color: '#fff',
     textAlign: 'center'
+}
+
+const autoCompleteText = {
+    color: '#757575'
 }
 
 export default HomeSearch

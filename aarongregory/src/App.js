@@ -7,17 +7,17 @@ import HomeSearch from './components/HomeSearch';
 const App = (props) => {
   const [searchItems, setSearchItems] = useState(
     [
-      {
-          id: 1,  
+      { 
           term: 'gitHub',
+          address: 'https://github.com/azerbijon123'
       },
       {
-          id: 2, 
           term: 'facebook',
+          address: 'https://facebook.com'
       },
       {
-          id: 3, 
           term: 'google',
+          address: 'https://google.com'
       },
     ]
   );
