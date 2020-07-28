@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Header from './components/layout/Header';
-import HomeSearch from './components/HomeSearch';
+import '../App.css';
+import HomeSearch from '../components/HomeSearch';
 
 const SearchSection = (props) => {
   const [searchItems, setSearchItems] = useState(

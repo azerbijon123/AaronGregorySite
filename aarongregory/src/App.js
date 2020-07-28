@@ -1,33 +1,19 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
-import Header from './components/layout/Header';
-import HomeSearch from './components/HomeSearch';
+import SearchSection from './sections/SearchSection';
+import MainSection from './sections/MainSection';
+import TestSection from './sections/TestSection';
 
 const App = (props) => {
-  const [searchItems, setSearchItems] = useState(
-    [
-      { 
-          term: 'gitHub',
-          address: 'https://github.com/azerbijon123'
-      },
-      {
-          term: 'facebook',
-          address: 'https://facebook.com'
-      },
-      {
-          term: 'google',
-          address: 'https://google.com'
-      },
-    ]
-  );
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <HomeSearch searchItems={ searchItems } />
-      </header>
-    </div>
+    <Router>
+      <Route exact path="/"       component={MainSection} />
+      <Route       path="/search" component={SearchSection} />
+      <Route       path="/test"   component={TestSection} />
+    </Router>
   );
 }
 
