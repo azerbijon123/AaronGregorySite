@@ -5,6 +5,7 @@ import './App.css';
 import SearchSection from './sections/SearchSection';
 import MainSection from './sections/MainSection';
 import TestSection from './sections/TestSection';
+import MinestroneFeatureSection from './sections/MinestroneFeatureSection';
 
 const App = (props) => {
 
@@ -13,6 +14,7 @@ const App = (props) => {
       <Route exact path="/"       component={MainSection} />
       <Route exact path="/search" component={SearchSection} />
       <Route       path="/test"   component={TestSection} />
+      <Route       path="/mf"     component={MinestroneFeatureSection} />
     </Router>
   );
 }
