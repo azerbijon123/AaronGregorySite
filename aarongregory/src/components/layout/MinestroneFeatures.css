@@ -2,7 +2,32 @@
     text-transform: capitalize;
     font-size: .7em;
     font-weight: normal;
+    margin-left: 10px;
 }
 .minestrone-header-text {
     text-transform: capitalize;
+    font-weight: normal;
+}
+.header-style-custom {
+    border-bottom: 1px solid #d4d4d5;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.body-main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.whats-new-panel {
+    width: 20%;
+    height: 100%;
+    padding: 30px 0;
+    border-right: 1px solid #d4d4d5;
+}
+.whats-new-details-panel {
+    flex: 1 100%;
+    padding: 10px;
 }
