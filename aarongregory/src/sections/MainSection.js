@@ -1,10 +1,10 @@
 import React from 'react';
+import Header from '../components/layout/Header';
+
 
 const MainSection = (props) => {
     return(
-        <div>
-            something here
-        </div>
+        <Header />
     );
 };
 

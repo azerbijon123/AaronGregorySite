@@ -1,7 +1,6 @@
 import React from 'react';
-import '../layout/Header.css';
 
-const Header = (props) => {
+const MinestroneFeatureHeader = (props) => {
     return(
         <header className="header-style">
             <div className="header-container">
@@ -18,20 +17,4 @@ const Header = (props) => {
     );
 }
 
-// Style definitions inside of the component
-const headerStyle = {
-    display: 'flex',
-    flexDirection: 'row',
-    height: '60px',
-};
-const headerContainer = {
-    width: '80%'
-};
-const headerLeftContainer = {
-
-};
-const headerMenuContainer = {
-
-};
-
-export default Header;
+export default MinestroneFeatureHeader;

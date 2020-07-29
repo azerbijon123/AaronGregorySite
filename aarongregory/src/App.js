@@ -11,7 +11,7 @@ const App = (props) => {
   return (
     <Router>
       <Route exact path="/"       component={MainSection} />
-      <Route       path="/search" component={SearchSection} />
+      <Route exact path="/search" component={SearchSection} />
       <Route       path="/test"   component={TestSection} />
     </Router>
   );
