@@ -1,16 +1,18 @@
 import React from 'react';
-import '../layout/Header.css';
+import '../main/Header.css';
+
+
 
 const Header = (props) => {
     return(
         <header className="header-style">
             <div className="header-container">
-                <div className="header-left-container">Aaron</div>
+                <div className="header-left-container" style={headerLeftContainer}>Aaron</div>
                 <div className="header-menu-container">
                     <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Contact</li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Travel</a></li>
                     </ul>
                 </div>
             </div>
@@ -28,7 +30,7 @@ const headerContainer = {
     width: '80%'
 };
 const headerLeftContainer = {
-
+    textTransform: 'lowercase'
 };
 const headerMenuContainer = {
 

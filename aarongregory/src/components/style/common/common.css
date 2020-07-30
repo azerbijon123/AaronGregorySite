@@ -1,8 +1,12 @@
 body, html {
     width: 100vw;
     height: 100vh;
+    color: #3a3a3a;
 }
-
 .homeSearchBox:focus {
     outline: none;
+}
+a {
+    color: #3a3a3a;
+    text-decoration: none;
 }
