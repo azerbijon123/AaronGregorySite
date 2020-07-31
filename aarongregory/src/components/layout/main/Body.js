@@ -6,7 +6,7 @@ const Body = (props) => {
         <div style={mainSectionHeightAndWidth}>
             <div >
                 <img src={ElephantLogo} style={elephantImageStyle} alt="Elephant logo" title="Credit for image: "></img>
-                <div style={statementText}>Pause, think, solve.</div>
+                <div style={statementText}>Pause, think.</div>
             </div>
         </div>
     );
