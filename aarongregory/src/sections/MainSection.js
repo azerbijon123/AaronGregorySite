@@ -1,23 +1,29 @@
 import React, { Fragment } from 'react';
 import Header from '../components/layout/main/Header';
-import Body from '../components/layout/main/Body';
+import HomeTop from '../components/layout/main/HomeTop';
+import HomeAsia from '../components/layout/main/HomeAsia';
 
 
 const MainSection = (props) => {
     return(
         <React.Fragment>
-            <div style={maxWidthAndHeight}>
+            <div style={fragmentDefaultStyle}>
                 <Header />
-                <Body />
+                <HomeTop />
+            </div>
+            <div style={fragmentDefaultStyle}>
+                <HomeAsia />
             </div>
         </React.Fragment>
         
     );
 };
 
-const maxWidthAndHeight = {
-    height: '100vh',
-    width: '100vw',
+const fragmentDefaultStyle = {
+    height: '100%',
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'column',
     backgroundColor: 'rgb(248, 248, 248)'
 }
 
