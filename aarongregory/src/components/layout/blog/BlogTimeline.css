@@ -1,0 +1,9 @@
+.timeline-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.timeline-links li {
+    padding: 20px;
+    text-transform: uppercase;
+}

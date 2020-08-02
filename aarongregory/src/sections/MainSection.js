@@ -7,26 +7,16 @@ import HomeAsia from '../components/layout/main/HomeAsia';
 const MainSection = (props) => {
     return(
         <React.Fragment>
-            <div style={fragmentDefaultStyle}>
+            <div className="fragment-default-style">
                 <Header />
                 <HomeTop />
             </div>
-            <div style={fragmentDefaultStyle}>
+            <div className="fragment-default-style">
                 <HomeAsia />
             </div>
         </React.Fragment>
         
     );
 };
-
-const fragmentDefaultStyle = {
-    height: '100%',
-    width: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-    backgroundColor: 'rgb(248, 248, 248)'
-}
-
-
 
 export default MainSection;
