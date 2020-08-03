@@ -29,7 +29,9 @@ const imageHolder = {
     flex: '1',
     height: '100%',
     backgroundImage: `url(${HomeAsiaBackgroundImage})`,
-    backgroundRepeat: 'no-repeat'
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
 };
 
 const roadToAsia = {
