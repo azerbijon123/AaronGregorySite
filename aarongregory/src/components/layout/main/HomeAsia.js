@@ -42,7 +42,8 @@ const roadToAsia = {
 };
 
 const roadToAsiaTitle = {
-    textAlign: 'center'
+    textAlign: 'center',
+    borderBottom: '2px solid #689A52'
 };
 
 export default HomeAsia;
