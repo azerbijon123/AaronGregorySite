@@ -1,7 +1,11 @@
 import React from 'react';
 import './MinestroneFeatures.css'
+import FeatureContainer from './FeatureContainer';
 
 const MinestroneFeatureHeader = (props) => {
+
+    
+
     return(
         <div className="main-container">
             <header className="header-style header-style-custom">
@@ -20,14 +24,7 @@ const MinestroneFeatureHeader = (props) => {
                 </div>
             </header>
             
-            <div className="body-main">
-                <div className="whats-new-panel">
-                    What's new
-                </div>
-                <div className="whats-new-details-panel">
-                    Whats new details panel
-                </div>
-            </div>
+            <FeatureContainer />
 
         </div>
     );

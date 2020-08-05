@@ -1,5 +1,5 @@
 import React from 'react';
-import MinestroneFeatureHeader from '../components/layout/MinestroneFeatureHeader';
+import MinestroneFeatureHeader from '../components/layout/mf/MinestroneFeatureHeader';
 
 const MinestroneFeatureSection = (props) => {
     return(
